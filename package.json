@@ -20,7 +20,8 @@
     ],
     "skills": [
       "./skills/laya-tune"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/itzmail/pi-laya-mlx/main/assets/banner.png"
   },
   "scripts": {
     "start": "./bin/laya.mjs start",

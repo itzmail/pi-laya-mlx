@@ -1,0 +1,42 @@
+{
+  "name": "pi-laya-mlx",
+  "version": "0.1.0",
+  "description": "Laya MLX local semantic auto-router & optimizer for Pi coding agent",
+  "type": "module",
+  "bin": {
+    "laya": "./bin/laya.mjs"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "laya",
+    "mlx",
+    "router",
+    "apple-silicon"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/laya-router.ts"
+    ],
+    "skills": [
+      "./skills/laya-tune"
+    ]
+  },
+  "scripts": {
+    "start": "./bin/laya.mjs start",
+    "stop": "./bin/laya.mjs stop",
+    "status": "./bin/laya.mjs status",
+    "reload": "./bin/laya.mjs reload"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
